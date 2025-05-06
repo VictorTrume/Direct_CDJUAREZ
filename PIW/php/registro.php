@@ -24,7 +24,7 @@ if (isset($_POST['registro'])) {
     $sql = "INSERT INTO usuarios (nombre, email, contraseña) VALUES ('$nombre', '$email', '$contraseña_hash')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "¡¡Registro exitoso!! <a href='../Inicio_Sesion.html'>Iniciar Sesion </a>";
+        echo "<a href='../Inicio_Sesion.html'>Iniciar Sesion </a>";
     } else {
         echo "Error: " .$sql . "<br>" .$conn->error;
     }
@@ -33,5 +33,6 @@ if (isset($_POST['registro'])) {
 }
 ?>
 <?php
-echo "El archivo registro.php se está ejecutando.";  // Agrega esta línea para depuración
+
+//echo "El archivo registro.php se está ejecutando.";  
 ?>

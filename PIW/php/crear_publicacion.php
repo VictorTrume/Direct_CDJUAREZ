@@ -21,6 +21,8 @@ if ($conn->connect_error) {
 // Obtener datos del formulario
 $titulo = $conn->real_escape_string($_POST['titulo']);
 $descripcion = $conn->real_escape_string($_POST['descripcion']);
+$direccion = $conn->real_escape_string($_POST['direccion']);
+
 
 // Obtener ID del usuario desde el correo de la sesión
 $email = $_SESSION['email'];
@@ -43,8 +45,8 @@ if (!move_uploaded_file($imagen_tmp, $ruta_destino)) {
 }
 
 // Insertar la nueva publicación en la base de datos
-$sql_insert = "INSERT INTO publicaciones (id_usuario, titulo, descripcion, imagen)
-               VALUES ($id_usuario, '$titulo', '$descripcion', '$nombre_imagen')";
+$sql_insert = "INSERT INTO publicaciones (id_usuario, titulo, descripcion, direccion, imagen)
+               VALUES ($id_usuario, '$titulo', '$descripcion', '$direccion', '$nombre_imagen')";
 
 if ($conn->query($sql_insert) === TRUE) {
     header("Location: ../PaginaP.php");

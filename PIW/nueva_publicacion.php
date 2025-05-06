@@ -10,7 +10,7 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="UTF-8">
     <title>Nueva Publicación</title>
-    <link rel="stylesheet" href="css/stylePP.css">
+    <link rel="stylesheet" href="css/styleP1.css">
 </head>
 <body>
     <div class="container">
@@ -22,6 +22,9 @@ if (!isset($_SESSION['email'])) {
 
                 <label for="descripcion">Descripción:</label><br>
                 <textarea name="descripcion" rows="4" required></textarea><br><br>
+
+                <label for="direccion ">Direccion:</label><br>
+                <input type="text" name="direccion" required><br><br>
 
                 <label for="imagen">Imagen:</label><br>
                 <input type="file" name="imagen" accept="image/*" required><br><br>

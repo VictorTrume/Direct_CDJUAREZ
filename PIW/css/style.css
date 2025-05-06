@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(113, 113, 219);;
+    /*background-image: url(../images/bck1.JPG);*/
+}
+
+.formulario {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario form {
+    box-sizing: border-box;
+}
+
+.formulario .nombre,
+.formulario .email,
+.formulario .contraseña {
+    position: relative;
+    border-bottom: 2px solid rgb(150, 150, 150);
+    margin: 30px 0;
+}
+
+.formulario .nombre input,
+.formulario .email input,
+.formulario .contraseña input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.formulario .nombre label,
+.formulario .email label,
+.formulario .contraseña label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: silver;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.formulario .nombre span::before,
+.formulario .email span::before,
+.formulario .contraseña span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(113, 113, 219);
+}
+
+.formulario .nombre input:focus ~ label,
+.formulario .email input:focus ~ label,
+.formulario .contraseña input:focus ~ label,
+.formulario .nombre input:not(:placeholder-shown) ~ label,
+.formulario .email input:not(:placeholder-shown) ~ label,
+.formulario .contraseña input:not(:placeholder-shown) ~ label {
+    top: -5px;
+    color: rgb(113, 113, 219);
+    transition: 0.5s;
+}
+
+.formulario .nombre input:focus ~ span::before,
+.formulario .email input:focus ~ span::before,
+.formulario .contraseña input:focus ~ span::before {
+    width: 100%;
+}
+
+.formulario .inicio_sesion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario .inicio_sesion a {
+    text-decoration: none;
+    color: rgb(113, 113, 219);
+    font-weight: bold;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario h4{
+    text-align: center;
+
+}
+
+input[type="submit"] {
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+    background-color: rgb(113, 113, 219);
+    border-radius: 25px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    display: block;  
+    margin: 20px auto;  
+}
+

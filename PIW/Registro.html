@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class= "formulario">
+        <h1>Registro</h1>
+        <form method="post" action="php/registro.php">
+            <div class="nombre">
+                <input type="text" required name="nombre">
+                <label>Nombre</label>
+            </div>
+            <div class="email">
+                <input type="text" required name="email">
+                <label>Correo Electrónico </label>
+            </div>
+            <div class="contraseña">
+                <input type="text" required name="contraseña">
+                <label>Contraseña</label>
+            </div>
+            <div class="cuenta">
+            <input type="submit" value="¡Listo!" name="registro">
+            
+            </div>
+            <div class="redireccion">
+                <h4>¿Ya tiene una cuenta?</h4>
+                <h4><a href="Inicio_Sesion.html">Inicio de Sesión </a></h4>
+            </div>
+
+
+        </form>
+    </div>
+    
+</body>
+</html>

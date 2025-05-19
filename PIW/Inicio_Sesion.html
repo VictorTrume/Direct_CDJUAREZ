@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Registro</title>
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="nav.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/estiloISesion.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class= "formulario">
-        <h1>Inicio de Sesión </h1>
+    <main class="imgBack">
+        <button onclick="location.href='index.html'" class="btnRegreso botonNav">Volver</button>
+    </main>
+
+    <div class="contenedorIS">
+        <img src="images/logoTemp.png" alt="Logo" height="100px">
+        <h1>Inicio Sesion</h1>
         <form method="post" action="php/InicioSesion.php">
             <div class="email">
-                <input type="text" required name="email">
-                <label>Correo Electrónico</label>
+                <p style="margin-top: 50px;">Correo</p>
+                <input type="email" required name="email" class="inpText">
             </div>
             <div class="contraseña">
-                <input type="text" required name="contraseña">
-                <label>Contraseña</label>
+                <p style="margin-top: 50px;">Contraseña</p>
+                <input type="password" required name="contraseña" class="inpText">
             </div>
-            <input type="submit" value="Iniciar Sesión">
+            <input type="submit" value="Iniciar Sesión" class="botonNav btnIS">
             <div class="redireccion">
-                <h4>¿No tiene cuenta?</h4>
+                <p>¿No tiene cuenta?</p>
                 <h4><a href="Registro.html">Regístrese aquí</a></h4>
             </div>
 

@@ -1,0 +1,29 @@
+body{
+display: flex;
+}
+
+main{
+    width: 60%;
+    height: 100vh;
+    background-image: url('../images/fondoInicio.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(60%);
+}
+
+.contenedorIS{
+    align-content: center;
+    text-align: center;
+    width: 40%;
+    height: 100vh;
+    background-color: #abba8d;
+}
+.btnIS{
+    background-color: #c7629b;
+    color: aliceblue;
+}
+.btnRegreso{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}

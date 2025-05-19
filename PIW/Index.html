@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juarez</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/estiloinicio.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Hola</h1>
-    <a href="Registro.html">Registrese aqui</a>
+    
+
+    <main>
+        <header class="parallax">
+            <div class="inicioSesion">
+            <button class="botonNav" onclick="location.href='Inicio_Sesion.html';">Iniciar Sesion</button>
+            <button class="botonNav" onclick="location.href='Registro.html';">Registrarse</button>
+        </div>
+        </header> 
+        
+        <div class="contenedor">
+            <h1 class="tagesschrift-regular ">Categorias a ver</h1>
+            <div id="categorias">
+                <div class="contenedorImg">
+                    <button class="botonNav btnCate" onclick="location.href='PaginaP.php';">Restaurantes</button>
+                    <img src="images/inicioImg2.jpg" alt="Restaurantes" width="80%" style="margin: 10px 0;">
+                </div>
+                <div class="contenedorImg">
+                    <button class="botonNav btnCate">Historia</button>
+                    <img src="images/inicioImg1.jpg" alt="Historico" width="80%" style="margin: 10px 0;">
+                </div>
+            </div>
+        </div>
+        
+
+</footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
+    </main>
 </body>
 </html>

@@ -6,6 +6,12 @@ if (!isset($_SESSION['email']) || !isset($_SESSION['nombre'])) {
     die("Acceso denegado. Debes iniciar sesión.");
 }
 
+/*
+$host = 'localhost';
+$user = 'u634466269_VictorTrume';
+$password = '2s=Vy2P4dnb';
+$dbname = 'u634466269_DirectCdJrz';
+*/
 $host = 'localhost';
 $user = 'root';
 $password = '';

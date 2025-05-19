@@ -10,28 +10,59 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="UTF-8">
     <title>Nueva Publicación</title>
-    <link rel="stylesheet" href="css/styleP1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="nav.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/estiloAdmin.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="content-container">
-            <h2>Crear nueva publicación</h2>
-            <form action="php/crear_publicacion.php" method="POST" enctype="multipart/form-data">
-                <label for="titulo">Título:</label><br>
-                <input type="text" name="titulo" required><br><br>
+<div id="nav-placeholder"></div>
+<script>
+    fetch("nav.php")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+        // Verifica si estás en 'nueva_publicacion.php'
+        if (window.location.pathname.includes("nueva_publicacion.php")) {
+            // Oculta el botón de inicio de sesión
+            const loginBtn = document.getElementById("agregarBtn");
+            if (loginBtn) {
+                loginBtn.style.display = "none";
+            }
+        }
+    });
+</script>
 
-                <label for="descripcion">Descripción:</label><br>
-                <textarea name="descripcion" rows="4" required></textarea><br><br>
-
-                <label for="direccion ">Direccion:</label><br>
-                <input type="text" name="direccion" required><br><br>
-
-                <label for="imagen">Imagen:</label><br>
-                <input type="file" name="imagen" accept="image/*" required><br><br>
-
-                <button type="submit" class="comment-btn">Publicar</button>
-            </form>
-        </div>
+<main>
+  <form action="php/crear_publicacion.php" method="POST" class="contenido">
+    <div class="contInp">
+        <p>Titulo</p>
+        <input type="text" name="titulo" required class="inpText">
+        <p>Direccion</p>
+        <input type="text" name="direccion" required class="inpText">
+    </div>  
+    <div class="contInp">
+        <p>Enlace de la imagen</p>
+        <input type="text" name="imagen_url" placeholder="https://..." required class="inpText">
     </div>
+    <section class="contenido">
+        <p>Texto Descriptivo</p>
+        <textarea name="descripcion" required class="descrip"></textarea>
+        <button class="botonNav btnIS">Agregar</button>
+    </section>
+</form>
+
+</main>
+
 </body>
 </html>
+
+

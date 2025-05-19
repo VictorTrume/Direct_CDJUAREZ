@@ -1,8 +1,14 @@
 <?php
 //No olvidar modificar esta parte cuando se suba a la nube
-$host = 'localhost' ;
+/*
+$host = 'localhost';
+$user = 'u634466269_VictorTrume';
+$password = '2s=Vy2P4dnb';
+$dbname = 'u634466269_DirectCdJrz';
+*/
+$host = 'localhost';
 $user = 'root';
-$password ='';
+$password = '';
 $dbname = 'directorioweb';
 
 $conn = new mysqli($host, $user, $password, $dbname);

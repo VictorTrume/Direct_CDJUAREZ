@@ -1,5 +1,11 @@
 <?php
-//No olvidar modificar esta parte cuando se suba a la nube
+// No olvidar modificar esta parte cuando se suba a la nube
+/*
+$host = 'localhost';
+$user = 'u634466269_VictorTrume';
+$password = '2s=Vy2P4dnb';
+$dbname = 'u634466269_DirectCdJrz';
+*/
 $host = 'localhost';
 $user = 'root';
 $password = '';
@@ -24,15 +30,14 @@ if (isset($_POST['registro'])) {
     $sql = "INSERT INTO usuarios (nombre, email, contraseña) VALUES ('$nombre', '$email', '$contraseña_hash')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<a href='../Inicio_Sesion.html'>Iniciar Sesion </a>";
+        // Redirige al login si el registro fue exitoso
+        header("Location: ../Inicio_Sesion.html");
+        exit();
     } else {
-        echo "Error: " .$sql . "<br>" .$conn->error;
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     $conn->close();
 }
 ?>
-<?php
 
-//echo "El archivo registro.php se está ejecutando.";  
-?>

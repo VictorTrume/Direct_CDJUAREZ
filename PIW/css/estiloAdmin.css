@@ -1,0 +1,32 @@
+.contenido{
+    display: flex;
+    width: 80%;
+    margin: 50px 10%;
+    font-size: 1.1em;
+    color: #370034;
+    flex-flow:wrap;
+}
+.contInp{
+    width: 50%;
+}
+.descrip{
+    width: 90%;
+    margin: 5px 5%;
+    height: 400px;
+    resize: none;
+    background-color: #9c2d6c33;
+    
+
+}
+.inpText{
+   background-color: #9c2d6c33;
+
+}
+.imgInp{
+    background-color: transparent;
+}
+.btnIS{
+        background-color: #c7629b;
+        width: 50%;
+        margin: 50px 25%;
+}

@@ -1,0 +1,58 @@
+
+*{
+}
+
+header{
+    width: auto;
+    height: 70vh;
+}
+.inicioSesion{
+    background-color: transparent;
+    position:sticky;
+    text-align: right;
+    top: 0px;
+    right: 0px;
+    
+}
+.contenedor{
+      margin:  50px 0 70px 0;
+
+}
+#categorias{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;    
+}
+.btnCate{
+    background-color: #c7629b !important; 
+    color: aliceblue;
+    height: 100px;
+    width: 70%;
+    margin: 30px 0 10px 0;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.contenedorImg{
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-style: dashed;
+    border-width: 5px;
+
+}
+.parallax{
+    background-image: url('https://www.caminoreal.com/storage/app/media/Blog/ciudad%20juarez%20camino%20real.jpg');
+    
+    min-height: 300px;
+
+    background-attachment: fixed;
+
+    background-position-y: -300px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}

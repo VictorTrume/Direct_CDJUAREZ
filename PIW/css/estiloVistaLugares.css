@@ -1,0 +1,52 @@
+main{
+    width: 90%;
+    margin-left: 5%;
+    min-height: 700px;
+    max-height: auto;
+
+    display: flex;
+    margin-top: 50px;
+}
+
+.infExtra{
+    width: 30%;
+}
+.infExtra p{
+    margin: 20px;
+    font-size: 1.5em;
+    color: #370034;
+}
+.contInf{
+    width: 70%;
+}
+
+.contInf p{
+    font-size: 1.2em;
+    padding: 50px 0 50px 50px;
+    word-spacing: .5em;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+
+    color: #370034;
+    font-weight: 400;
+}
+
+.imgInf{
+    width: 70%;
+    margin: 0 10% 0 15%;
+}
+h2{
+    justify-self: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 2em;
+}
+.subt{
+    font-size: 1.6em;
+    justify-self: center;
+    margin-top: 20px;
+    color: #9c2d6c;
+}
+h1{
+    margin-bottom: 20px;
+}

@@ -3,36 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Registro</title>
+     <title>Registro</title>
+        <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/estiloRegistro.css">
+    <link rel="stylesheet" href="css/estiloISesion.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="nav.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class= "formulario">
+    <main class="imgBack">
+        <button onclick="location.href='index.html'" class="btnRegreso botonNav">Volver</button>
+    </main>
+
+    <div class="contenedorIS">
+        <img src="images/logoTemp.png" alt="Logo" height="100px" style="margin-top: 50px;">
         <h1>Registro</h1>
+
         <form method="post" action="php/registro.php">
             <div class="nombre">
-                <input type="text" required name="nombre">
-                <label>Nombre</label>
+                <p style="margin-top: 50px;">Usuario</p>
+                <input type="text" required name="nombre" class="inpText">
             </div>
             <div class="email">
-                <input type="text" required name="email">
-                <label>Correo Electrónico </label>
+                <p style="margin-top: 50px;">Correo</p>
+                <input type="text" required name="email" class="inpText">
             </div>
             <div class="contraseña">
-                <input type="password" required name="contraseña">
-                <label>Contraseña</label>
+                <p style="margin-top: 50px;">Contraseña</p>
+                <input type="password" required name="contraseña" class="inpText">
             </div>
-            <div class="cuenta">
-            <input type="submit" value="¡Listo!" name="registro">
+            <p></p>
+            <input type="submit" value="¡Listo!" name="registro" class="botonNav btnIS">
             
-            </div>
+
             <div class="redireccion">
                 <h4>¿Ya tiene una cuenta?</h4>
-                <h4><a href="Inicio_Sesion.html">Inicio de Sesión </a></h4>
+                <h4 style="margin-bottom: 50px;"><a href="Inicio_Sesion.html">Inicio de Sesión </a></h4>
             </div>
 
 
         </form>
+
     </div>
     
 </body>
